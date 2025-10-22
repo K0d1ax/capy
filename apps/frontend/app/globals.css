@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-width: 240px;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+/* Focus ring for accessibility */
+.focus-outline:focus {
+  outline: 2px solid rgb(59 130 246);
+  outline-offset: 2px;
+}

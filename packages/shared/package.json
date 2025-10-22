@@ -1,0 +1,14 @@
+{
+  "name": "@landingstudio/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./eslint/next": "./eslint-config/next.js",
+    "./eslint/node": "./eslint-config/node.js",
+    "./tsconfig/base": "./tsconfig/base.json",
+    "./tsconfig/node": "./tsconfig/node.json",
+    "./tsconfig/next": "./tsconfig/next.json",
+    "./types": "./types/index.ts"
+  }
+}
