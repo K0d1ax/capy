@@ -7,7 +7,7 @@ WORKDIR /repo
 COPY package.json pnpm-workspace.yaml turbo.json .prettierrc .eslintrc.js tsconfig.base.json ./
 COPY packages ./packages
 COPY apps/frontend/package.json ./apps/frontend/package.json
-RUN pnpm install
+RUN pnpm -r install
 COPY apps/frontend ./apps/frontend
 RUN pnpm --filter @landingstudio/frontend build
 
